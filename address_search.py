@@ -3,6 +3,8 @@ import requests
 # zipcode = input("郵便番号<ハイフン無し7桁>は？")
 zipcode = "0287111"
 
+
+# def seearch_address(zipcode):
 response = requests.get(f"https://zipcloud.ibsnet.co.jp/api/search?zipcode={zipcode}")
 
 # print(response)
@@ -31,6 +33,5 @@ city_name = address_info["address2"]
 town_name = address_info["address3"]
 
 address = f"{prefecture_name}{city_name}{town_name}"
-
 
 print(address)
