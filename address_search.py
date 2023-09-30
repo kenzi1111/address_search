@@ -32,4 +32,5 @@ town_name = address_info["address3"]
 
 address = f"{prefecture_name}{city_name}{town_name}"
 
+
 print(address)
